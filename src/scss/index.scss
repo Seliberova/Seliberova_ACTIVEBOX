@@ -3,6 +3,7 @@
 @import "../scss/features";
 @import "../scss/works";
 @import "../scss/team";
+@import "../scss/testimonaials";
 
 * {
   margin: 0;
@@ -14,9 +15,9 @@
   margin: auto;
 }
 .container {
-    max-width: 1170px;
-    margin: auto;
-    padding: 0 15px;
-    position: relative;
-    z-index: 2;
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
 }
