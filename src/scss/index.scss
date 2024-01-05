@@ -1,6 +1,7 @@
 @import "../scss/fonts";
 @import "../scss/header";
 @import "../scss/features";
+@import "../scss/works";
 
 * {
   margin: 0;
@@ -8,6 +9,8 @@
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
+  max-width: 1510px;
+  margin: auto;
 }
 .container {
     max-width: 1170px;
