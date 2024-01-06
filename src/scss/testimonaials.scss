@@ -8,8 +8,12 @@
 }
 .swiper { 
     position: relative;
-    // width: 100%;
-    // overflow: visible;
+
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: absolute;
+    top: 110%;
+    z-index: 10;
 }
 .swiper-pagination {
     position: absolute;

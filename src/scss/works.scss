@@ -19,41 +19,18 @@
     background-size: cover; 
     position: relative;
 
-    .text_name {
-        color: #FFF;
-        text-align: center;
-        font-family: "Raleway";
-        font-size: 24px;
-        font-weight: 900;
-        text-transform: uppercase;
-        position: relative;
-        z-index: 2;
-        &:hover {
 
-        }
-    
-    }
-    .text_name_card {
-        color: #FFF;
-        text-align: center;
-        font-family: "Raleway";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        position: relative;
-        z-index: 2;
-        &:hover {
-
-        }
-    }
 
     .card_works_item {
+        a {
+        .text_name {
+            opacity: 0;
+        }
+        .text_name_card {
+            opacity: 0;
+        }
+        }
         &:hover {
-        // background-image: url(../img/icon_works/icon10.jpg);
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: cover;
         background: rgba(255, 67, 67, 0.60);
         width: 100%;
         height: 100%;
@@ -61,6 +38,44 @@
         left: 0;
         top: 0;
         z-index: 1;
+        a {
+            display: flex;
+            align-items: center;
+            // background-image: url(../img/icon_works/icon10.jpg);
+            // background-repeat: no-repeat;
+            // background-position: center;
+            // background-size: cover;
+            // background: rgba(255, 67, 67, 0.60);
+
+            .text_name {
+                opacity: 10;
+                color: #FFF;
+                text-align: center;
+                font-family: "Raleway";
+                font-size: 24px;
+                font-weight: 900;
+                text-transform: uppercase;
+                position: relative;
+                z-index: 2;
+                margin-bottom: 40px;
+              
+            
+            }
+            .text_name_card {
+                opacity: 10;
+                color: #FFF;
+                text-align: center;
+                font-family: "Raleway";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                position: relative;
+                z-index: 2;
+                
+        
+            }
+        }
     }
         &:active {
          background: rgba(185, 12, 12, 0.80)        
@@ -79,6 +94,7 @@
 }
 .text_card_works {
     text-align: center;
+    align-items: center;
 
     
 }
