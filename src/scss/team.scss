@@ -59,20 +59,21 @@
     line-height: normal;
     margin-bottom: 38px;
 }
-.img_social {
+.icon_social {
     width: 39px;
     height: 39px;
-    display: flex;
-    justify-content: end;
-   
+    margin: 0 0 0 6px;
+    &:first-child {
+        margin-left: 0;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
 }
-.icon_social {
-  
-}
-.facebook {
-}
-.twitter {
-}
-.linkedin {
+.img_social {
+    display: flex;
+    
 }

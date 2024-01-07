@@ -1,6 +1,141 @@
+// .container_works {
+//     max-width: 1510px;
+//     margin: auto;
+// }
+// .wrapper_top {
+//     display: flex;
+// }
+// .wrapper_bottom {
+//     display: flex;
+// }
+
+// .card_works {
+//     width: 379px;
+//     height: 340px;
+//     border: 1px solid #fff;
+//     object-fit: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover; 
+//     position: relative;
+
+
+
+//     .card_works_item {
+//         .card_item {
+//             a {
+//                 .text_name {
+//                     opacity: 0;
+//                 }
+//                 .text_name_card {
+//                     opacity: 0;
+        
+//                     .photo_works {
+//                        width: 379px;
+//                        height: 340px;
+//                        img {
+//                         width: 100%;
+//                         height: 100%;
+//                         object-fit: cover;
+//                        }
+//                     }
+//                 }
+//                 }
+//                 &:hover {
+//                 background: rgba(255, 67, 67, 0.60);
+//                 width: 100%;
+//                 height: 100%;
+//                 position: absolute;
+//                 left: 0;
+//                 top: 0;
+//                 z-index: 1;
+//                 a {
+//                     display: flex;
+//                     align-items: center;
+        
+//                     .text_name {
+//                         opacity: 10;
+//                         color: #FFF;
+//                         text-align: center;
+//                         font-family: "Raleway";
+//                         font-size: 24px;
+//                         font-weight: 900;
+//                         text-transform: uppercase;
+//                         position: relative;
+//                         z-index: 2;
+//                         margin-bottom: 40px;
+                      
+                    
+//                     }
+//                     .text_name_card {
+//                         opacity: 10;
+//                         color: #FFF;
+//                         text-align: center;
+//                         font-family: "Raleway";
+//                         font-size: 18px;
+//                         font-style: normal;
+//                         font-weight: 400;
+//                         line-height: normal;
+//                         position: relative;
+//                         z-index: 2;
+                        
+                
+//                     }
+//                 }
+//         }
+        
+//     }
+//         &:active {
+//          background: rgba(185, 12, 12, 0.80)        
+//         }
+//         a {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//         // z-index: 1;
+//         }
+
+        
+//     }
+// }
+// .text_card_works {
+//     text-align: center;
+//     align-items: center;
+
+    
+// }
+
+// .card_works_hall {
+//     background-image: url(../img/icon_works/hall.jpg);
+// } 
+// .card_works_lanter {
+//     background-image: url(../img/icon_works/lantern.jpg);
+// }
+// .card_works_dambldor {
+//     background-image: url(../img/icon_works/dambldor.jpg);
+// }
+// .card_works_letters {
+//     background-image: url(../img/icon_works/letters.jpg);
+// }
+// .card_works_pendant {
+//     background-image: url(../img/icon_works/pendant.jpg);
+// }
+// .card_works_corridor {
+//     background-image: url(../img/icon_works/corridor.jpg);
+// }
+// .card_works_train {
+//     background-image: url(../img/icon_works/train.jpg);
+// }
+// .card_works_hermiona {
+//     background-image: url(../img/icon_works/hermiona.jpg);
+// }
+
+.works {
+}
 .container_works {
-    max-width: 1510px;
-    margin: auto;
+    width: 100%;;
 }
 .wrapper_top {
     display: flex;
@@ -9,119 +144,78 @@
     display: flex;
 }
 
-.card_works {
-    width: 379px;
-    height: 340px;
-    border: 1px solid #fff;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; 
+.card_item {
+   a {
+    width: 25%;
+    max-height: 340px;
     position: relative;
 
-
-
-    .card_works_item {
-        a {
-        .text_name {
-            opacity: 0;
-        }
-        .text_name_card {
-            opacity: 0;
-        }
-        }
-        &:hover {
+    &:hover::before {
+        content: " ";
         background: rgba(255, 67, 67, 0.60);
         width: 100%;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
-        z-index: 1;
-        a {
-            display: flex;
-            align-items: center;
-            // background-image: url(../img/icon_works/icon10.jpg);
-            // background-repeat: no-repeat;
-            // background-position: center;
-            // background-size: cover;
-            // background: rgba(255, 67, 67, 0.60);
-
-            .text_name {
-                opacity: 10;
-                color: #FFF;
-                text-align: center;
-                font-family: "Raleway";
-                font-size: 24px;
-                font-weight: 900;
-                text-transform: uppercase;
-                position: relative;
-                z-index: 2;
-                margin-bottom: 40px;
-              
-            
-            }
-            .text_name_card {
-                opacity: 10;
-                color: #FFF;
-                text-align: center;
-                font-family: "Raleway";
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                position: relative;
-                z-index: 2;
-                
-        
-            }
-        }
+        z-index: 1; 
+       } 
+       &:active:before {
+        background: rgba(185, 12, 12, 0.80) 
     }
-        &:active {
-         background: rgba(185, 12, 12, 0.80)        
-        }
-        a {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        // z-index: 1;
-        }
+   }  
+}
 
-        
+.photo_works {
+    width: 378px;
+    height: 340px;
+    border: 1px solid #fff;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+     
     }
 }
-.text_card_works {
-    text-align: center;
-    align-items: center;
 
+.text_card_works {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+    display: block;
+    align-items: center;
+    width: 100%;
+    padding: 125px 0;
+    &:hover {
+        opacity: 10;
+    }
     
 }
-
-.card_works_hall {
-    background-image: url(../img/icon_works/hall.jpg);
-} 
-.card_works_lanter {
-    background-image: url(../img/icon_works/lantern.jpg);
+.text_name {
+    color: #fff;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;  
+    margin-bottom: 40px; 
+    
+    
 }
-.card_works_dambldor {
-    background-image: url(../img/icon_works/dambldor.jpg);
-}
-.card_works_letters {
-    background-image: url(../img/icon_works/letters.jpg);
-}
-.card_works_pendant {
-    background-image: url(../img/icon_works/pendant.jpg);
-}
-.card_works_corridor {
-    background-image: url(../img/icon_works/corridor.jpg);
-}
-.card_works_train {
-    background-image: url(../img/icon_works/train.jpg);
-}
-.card_works_hermiona {
-    background-image: url(../img/icon_works/hermiona.jpg);
+.text_name_card {
+    color: #fff;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
 }
 
 
