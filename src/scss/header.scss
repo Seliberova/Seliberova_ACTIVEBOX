@@ -19,7 +19,6 @@
    }
 }
 
-
 .wrapper_header {
     &::after {
         content: " ";
@@ -40,14 +39,11 @@
     margin: 0;
     @media (max-width: 1024px) {
         font-size: 23px;
-    
     }
     @media (max-width: 320px) {
         font-size: 15px;
-    
     }
     
-
     .box {
         color: #FFF;
         text-transform: uppercase;
@@ -55,11 +51,9 @@
         font-weight: 300;
         @media (max-width: 1024px) {
             font-size: 23px;
-        
         }
         @media (max-width: 320px) {
             font-size: 15px;
-        
         }
     }
 }
@@ -84,9 +78,8 @@
 .navigation_header_menu {
    display: flex;
    margin: 0;
-
-    
 }
+
 .navigation_header_menu_item {
     width: 134px;
     padding-bottom: 32px;
@@ -95,13 +88,10 @@
         width: 112px;
     }
     @media (max-width: 320px) {
-    
     }
-
     &:hover {
         border-bottom: 3px solid #BABBC5;
         padding-bottom: 29px;
-  
     }
     a {
         color: #FFF;
@@ -116,28 +106,23 @@
         transition: 0.2s;
         @media (max-width: 1024px) {
             font-size: 12px;
-        
         }
         @media (max-width: 320px) {
             font-size: 13px;
-        
         }
-
     }
     &:active {
         border-bottom: 3px solid #E71414;
         a {
             color: #E71414; 
         }
-    }
-    
+    }  
 }
 
 @media (max-width: 767px) {
     .navigation_header {
         display: block;
         position: relative;
- 
     }
     .bur {
         cursor: pointer;
@@ -147,7 +132,6 @@
       font-size: 20px;
       display: none;
       padding: 10px;
-
     }
     .fa-bars {
         color: #ffffff;
@@ -158,19 +142,16 @@
         right: 10%;
         padding: 10px;
     }
-
     .navigation_header_menu {
         display: block;
         position: absolute;
         top: 150%;
         left: -200;
-    
     }
     .navigation_header_menu_item {
         text-align: start;
         margin: 0 0 15px 0;
     }
-
     .fa-bars.active {
         color: #ffffff;
         font-size: 25px;   
@@ -181,7 +162,6 @@
         font-size: 25px;   
         display: block;
     }
-
 
     .wrapper_header {
         &::after {
@@ -194,9 +174,6 @@
     }
     .main.active {
         visibility: hidden;
-      
-
-        
     }
     .navigation_header_menu.active {
         display: block;
@@ -211,21 +188,17 @@
         position: absolute;
         top: 50%;
         right: 10%;
-        display: none;
-        
-  
+        display: none;  
       }
       .fa-bars.active {
-          color: #ffffff;
-          font-size: 23px;   
-          display: block;
-          position: absolute;
-          top: 60%;
-          right: 10%;
-          display: none;
-      }
-
-   
+        color: #ffffff;
+        font-size: 23px;   
+        display: block;
+        position: absolute;
+        top: 60%;
+        right: 10%;
+        display: none;
+    }
 }
 
 .main {
@@ -298,5 +271,4 @@ h1 {
           box-shadow: #E71414 5px 5px 50px 0;  
         }    
     }
-
 }

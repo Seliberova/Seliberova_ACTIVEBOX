@@ -1,18 +1,14 @@
 .team {
     padding: 114px 0;
 }
-.container {
-}
 .wrapper_team {
     display: grid;
-    // grid-template-columns: repeat(4, minmax(100px, 270px));
     grid-template-columns: repeat(4 1fr);
     grid-template-rows: repeat(1 1fr);
     margin: 0 -15px;
     @media (max-width: 320px) {
         grid-template-columns: repeat(1 1fr);
         grid-template-rows: repeat(4 1fr);
-    
     }
 }
 .harry {
@@ -21,9 +17,7 @@
     @media (max-width: 320px) {
         grid-template-columns: 1/2;
         grid-row: 1/2;
-    
     }
-
 }
 .ron {
     grid-template-columns: 2/3;
@@ -31,9 +25,7 @@
     @media (max-width: 320px) {
         grid-template-columns: 1/2;
         grid-row: 2/3;
-    
     }
-
 }
 .hermione {
     grid-template-columns: 3/4;
@@ -41,9 +33,7 @@
     @media (max-width: 320px) {
         grid-template-columns: 1/2;
         grid-row: 3/4;
-    
     }
-
 }
 .draco {
     grid-template-columns: 4/5;
@@ -51,9 +41,7 @@
     @media (max-width: 320px) {
         grid-template-columns: 1/2;
         grid-row: 4/5;
-    
     }
-
 }
 .card_team {
  max-width: 270px;
@@ -63,7 +51,6 @@
     &:last-child {
         margin-bottom: 0;
     }
-
 }
 }
 .img_team {
@@ -75,7 +62,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        
     }
 }
 .info_card {
@@ -93,11 +79,9 @@
     margin-bottom: 20px;
     @media (max-width: 1024px) {
         font-size: 18px;
-    
     }
     @media (max-width: 320px) {
         font-size: 18px;
-    
     }
     
 }
@@ -112,11 +96,9 @@
     margin-bottom: 24px;
     @media (max-width: 1024px) {
         font-size: 14px;
-    
     }
     @media (max-width: 320px) {
         font-size: 14px;
-    
     }   
 }
 .description_team {
@@ -129,11 +111,9 @@
     margin-bottom: 38px;
     @media (max-width: 1024px) {
         font-size: 14px;
-    
     }
     @media (max-width: 320px) {
         font-size: 14px;
-    
     }
 }
 .icon_social {
@@ -143,12 +123,10 @@
     @media (max-width: 1024px) {
         width: 32px;
         height: 32px;
-    
     }
     @media (max-width: 320px) {
         width: 39px;
         height: 39px;
-    
     }
     &:first-child {
         margin-left: 0;
@@ -158,10 +136,8 @@
         height: 100%;
         object-fit: cover;
     }
-
 }
 .img_social {
     display: flex;
-    
 }
 
