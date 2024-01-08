@@ -139,7 +139,7 @@
         display: block;
         position: absolute;
         top: 50%;
-        right: 10%;
+        right: 0%;
         padding: 10px;
     }
     .navigation_header_menu {
@@ -167,6 +167,7 @@
         &::after {
             display: none;
         }
+        margin-bottom: 65px;
     }
 
     .logo {
@@ -187,7 +188,7 @@
         display: block;
         position: absolute;
         top: 50%;
-        right: 10%;
+        right: 0%;
         display: none;  
       }
       .fa-bars.active {
