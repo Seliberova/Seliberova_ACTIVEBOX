@@ -3,27 +3,26 @@
 }
 .container_slide {
     
-    
 }
 .swiper { 
     position: relative;
-    padding: 0 0 100px 0;
+    padding: 0 0 50px 0;
  
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     position: absolute;
-    top: 110%;
+    top: 95%;
     z-index: 10;
 }
 .swiper-pagination-bullet {
-    background-color: #f10000;
-    border: 1px solid #000000;
-    width: 15px;
-    height: 15px;
+    background-color: #ffffff;
+    border: 1px solid #5C3249;
+    width: 9px;
+    height: 9px;
 
 }
 .swiper-pagination-bullet-active {
-    background-color: #ffffff;
+    background-color: #865771;
     
 }
 .swiper-slide {
