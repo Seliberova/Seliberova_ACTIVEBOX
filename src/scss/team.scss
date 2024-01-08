@@ -4,12 +4,67 @@
 .container {
 }
 .wrapper_team {
-    display: flex;
+    display: grid;
+    // grid-template-columns: repeat(4, minmax(100px, 270px));
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(1 1fr);
     margin: 0 -15px;
+    @media (max-width: 320px) {
+        grid-template-columns: repeat(1 1fr);
+        grid-template-rows: repeat(4 1fr);
+    
+    }
+}
+.harry {
+       grid-template-columns: 1/2;
+       grid-row: 1/2;
+    @media (max-width: 320px) {
+        grid-template-columns: 1/2;
+        grid-row: 1/2;
+    
+    }
+
+}
+.ron {
+    grid-template-columns: 2/3;
+    grid-row: 1/2;
+    @media (max-width: 320px) {
+        grid-template-columns: 1/2;
+        grid-row: 2/3;
+    
+    }
+
+}
+.hermione {
+    grid-template-columns: 3/4;
+    grid-row: 1/2;
+    @media (max-width: 320px) {
+        grid-template-columns: 1/2;
+        grid-row: 3/4;
+    
+    }
+
+}
+.draco {
+    grid-template-columns: 4/5;
+    grid-row: 1/2;
+    @media (max-width: 320px) {
+        grid-template-columns: 1/2;
+        grid-row: 4/5;
+    
+    }
+
 }
 .card_team {
  max-width: 270px;
  margin: 0 15px;
+ @media (max-width: 320px) {
+    margin-bottom: 49px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}
 }
 .img_team {
     max-width: 270px;
@@ -26,10 +81,7 @@
 .info_card {
     text-align: left;
 }
-.name_team {
 
-
-}
 .name_person {
     color: #2D3033;
     font-family: "Raleway";
@@ -39,6 +91,15 @@
     line-height: normal;
     text-transform: capitalize;
     margin-bottom: 20px;
+    @media (max-width: 1024px) {
+        font-size: 18px;
+    
+    }
+    @media (max-width: 320px) {
+        font-size: 18px;
+    
+    }
+    
 }
 .name_prifession {
     color: #FF4343;
@@ -48,7 +109,15 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase; 
-    margin-bottom: 24px;   
+    margin-bottom: 24px;
+    @media (max-width: 1024px) {
+        font-size: 14px;
+    
+    }
+    @media (max-width: 320px) {
+        font-size: 14px;
+    
+    }   
 }
 .description_team {
     color: #6C7279;
@@ -58,11 +127,29 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 38px;
+    @media (max-width: 1024px) {
+        font-size: 14px;
+    
+    }
+    @media (max-width: 320px) {
+        font-size: 14px;
+    
+    }
 }
 .icon_social {
     width: 39px;
     height: 39px;
     margin: 0 0 0 6px;
+    @media (max-width: 1024px) {
+        width: 32px;
+        height: 32px;
+    
+    }
+    @media (max-width: 320px) {
+        width: 39px;
+        height: 39px;
+    
+    }
     &:first-child {
         margin-left: 0;
     }
@@ -77,3 +164,4 @@
     display: flex;
     
 }
+

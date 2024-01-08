@@ -10,23 +10,34 @@
     position: relative;
 
 }
-// .swiper-pagination-bullets.swiper-pagination-horizontal {
-//     position: absolute;
-//     top: 80%;
-//     z-index: 10;
-// }
-// .swiper-pagination {
-//     position: absolute;
-//     top: 110%;
-//     z-index: 10;
-// }
-.swiper-slide {
-    max-width: 1510px;
-    display: flex;
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: absolute;
+    top: 110%;
+    z-index: 10;
 }
+
+.swiper-slide {
+    display: flex;
+    &:nth-child(odd) {
+        background: #5C3249;
+    }
+    &:nth-child(even) {
+        background: #353C65;
+    }
+
+    @media (max-width: 320px) {
+        display: block;
+    
+    }
+}
+
 .photo_slide {
     max-width: 50%;
     height: 490px;
+    @media (max-width: 320px) {
+        max-width: 100%;
+    
+    }
     img {
         width: 100%;
         height: 100%;
@@ -36,9 +47,10 @@
 .text_testimonials {
     max-width: 50%;
     height: 490px;
-    background: #5C3249;
-    &:nth-child(2n+1) {
-        background: #353C65;
+
+    @media (max-width: 320px) {
+        max-width: 100%;
+    
     }
 }
 
@@ -48,6 +60,15 @@
     text-align: start;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1024px) {
+        font-size: 80%;
+    
+    }
+    @media (max-width: 320px) {
+        max-width: 90%;
+    
+    }
+    
     
 }
 .text_slide_first {
@@ -58,6 +79,22 @@
     font-weight: 400;
     text-transform: capitalize;  
     margin-bottom: 30px;
+    @media (max-width: 1024px) {
+        font-size: 24px;
+        color: #FFF;
+        text-align: center;
+        font-family: "Cardo";
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    @media (max-width: 320px) {
+        font-size: 24px;
+    
+    }
+   
 
 }
 .text_slide {
@@ -67,5 +104,13 @@
     font-weight: 700;
     text-transform: uppercase; 
     margin: 0;
+    @media (max-width: 1024px) {
+        font-size: 12px;
+    
+    }
+    @media (max-width: 320px) {
+        font-size: 12px;
+    
+    }
        
 }

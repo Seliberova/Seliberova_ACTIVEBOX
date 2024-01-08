@@ -18,6 +18,8 @@
     z-index: 1;
    }
 }
+
+
 .wrapper_header {
     &::after {
         content: " ";
@@ -36,33 +38,65 @@
     font-weight: 900;
     font-family: "Raleway";
     margin: 0;
-
+    @media (max-width: 1024px) {
+        font-size: 23px;
+    
+    }
+    @media (max-width: 320px) {
+        font-size: 15px;
+    
+    }
+    
 
     .box {
         color: #FFF;
         text-transform: uppercase;
         font-size: 25px;
         font-weight: 300;
+        @media (max-width: 1024px) {
+            font-size: 23px;
+        
+        }
+        @media (max-width: 320px) {
+            font-size: 15px;
+        
+        }
     }
+}
+
+.fa-bars {
+    color: #ffffff;
+    font-size: 25px;
+    display: none;
+}
+.fa-xmark {
+    color: #ffffff;
+    font-size: 25px;   
+    display: none;
 }
 
 .navigation_header {
     padding-top: 38px;
     display: flex;
     justify-content: space-between;
-
     
 }
 .navigation_header_menu {
    display: flex;
    margin: 0;
+
     
 }
 .navigation_header_menu_item {
     width: 134px;
     padding-bottom: 32px;
     text-align: center;
+    @media (max-width: 1024px) {
+        width: 112px;
+    }
+    @media (max-width: 320px) {
     
+    }
 
     &:hover {
         border-bottom: 3px solid #BABBC5;
@@ -80,6 +114,14 @@
         text-transform: uppercase;
         padding-bottom: 32px;
         transition: 0.2s;
+        @media (max-width: 1024px) {
+            font-size: 12px;
+        
+        }
+        @media (max-width: 320px) {
+            font-size: 13px;
+        
+        }
 
     }
     &:active {
@@ -90,11 +132,105 @@
     }
     
 }
-.main {
-    padding-bottom: 120px;
 
+@media (max-width: 767px) {
+    .navigation_header {
+        display: block;
+        position: relative;
+ 
+    }
+    .bur {
+        cursor: pointer;
+    }
+     .fa-xmark {
+      color: #FFF;
+      font-size: 20px;
+      display: none;
+      padding: 10px;
+
+    }
+    .fa-bars {
+        color: #ffffff;
+        font-size: 23px;   
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        padding: 10px;
+    }
+
+    .navigation_header_menu {
+        display: block;
+        position: absolute;
+        top: 150%;
+        left: -200;
+    
+    }
+    .navigation_header_menu_item {
+        text-align: start;
+        margin: 0 0 15px 0;
+    }
+
+    .fa-bars.active {
+        color: #ffffff;
+        font-size: 25px;   
+        display: block;
+    }
+    .fa-xmark.active {
+        color: #ffffff;
+        font-size: 25px;   
+        display: block;
+    }
+
+
+    .wrapper_header {
+        &::after {
+            display: none;
+        }
+    }
+
+    .logo {
+        margin-bottom: 40px;
+    }
+    .main.active {
+        visibility: hidden;
+      
+
+        
+    }
+    .navigation_header_menu.active {
+        display: block;
+        position: absolute;
+        top: 150%;
+        left: 0%;
+    }
+    .fa-xmark {
+        color: #FFF;
+        font-size: 23px;   
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        display: none;
+        
+  
+      }
+      .fa-bars.active {
+          color: #ffffff;
+          font-size: 23px;   
+          display: block;
+          position: absolute;
+          top: 60%;
+          right: 10%;
+          display: none;
+      }
+
+   
 }
 
+.main {
+    padding-bottom: 120px;
+}
 
 h1 {
     text-transform: uppercase;
@@ -104,6 +240,14 @@ h1 {
     font-size: 64px;
     font-weight: 900;
     margin-bottom: 31px;
+    @media (max-width: 1024px) {
+        font-size: 48px;
+    
+    }
+    @media (max-width: 320px) {
+        font-size: 36px;
+    
+    }
 
 }
 .main_text {
@@ -113,12 +257,18 @@ h1 {
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 105px;
-
+    @media (max-width: 1024px) {
+        font-size: 18px;
+    
+    }
+    @media (max-width: 320px) {
+        font-size: 14px;
+    
+    }
 }
 
 .button {
     text-align: center;
-
     a {
         color: #FFF;
         font-family: "Raleway";
@@ -129,6 +279,14 @@ h1 {
         text-transform: uppercase;
         padding: 28px 93px;   
         background-color: #FF4343; 
+        @media (max-width: 1024px) {
+            padding: 28px 83px;
+        
+        }
+        @media (max-width: 320px) {
+            padding: 20px 20px;
+        
+        }
 
         &:hover {
             background-color: #E71414;
@@ -141,5 +299,4 @@ h1 {
         }    
     }
 
-    
 }
