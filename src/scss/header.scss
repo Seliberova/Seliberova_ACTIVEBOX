@@ -145,8 +145,8 @@
     .navigation_header_menu {
         display: block;
         position: absolute;
-        top: 150%;
-        left: -200;
+        top: -1000%;
+        left: 0;
     }
     .navigation_header_menu_item {
         text-align: start;
@@ -181,6 +181,7 @@
         position: absolute;
         top: 150%;
         left: 0%;
+        transition: 0.5s;
     }
     .fa-xmark {
         color: #FFF;
